@@ -9,7 +9,7 @@ const app = express();
 //password : Wnlp7a3PTm87lpuq
 
 mongoose
-.connect("mongodb+srv://gorakhgupta852:Wnlp7a3PTm87lpuq@cluster0.t3goq4i.mongodb.net/node-angular?retryWrites=true&w=majority")
+.connect("mongodb+srv://gorakhgupta852:" + process.env.MONGO_ATLAS_PW + "@cluster0.t3goq4i.mongodb.net/node-angular?retryWrites=true&w=majority")
     .then(() => {
         console.log("Connected to Database");
     })
